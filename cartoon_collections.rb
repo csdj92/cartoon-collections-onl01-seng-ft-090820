@@ -13,7 +13,7 @@ def long_planeteer_calls(planet)
   planet.any? {|long_call| long_call.length > 4}
 end
 
-def find_the_cheese(cheese)
-  cheese.find==cheddar
-  cheese_types = ["cheddar", "gouda", "camembert"]
+def find_the_cheese
+    cheese_types = ("cheddar", "gouda", "camembert").to_a
+    my_find(cheese_types) {|i|== cheddar}
 end
