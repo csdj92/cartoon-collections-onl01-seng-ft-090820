@@ -1,3 +1,5 @@
+
+
 def roll_call_dwarves(sleepy)
 sleepy.each_with_index {|drawf,num| puts "#{num+1}#{drawf}"}
 end
