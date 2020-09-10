@@ -5,6 +5,7 @@ end
 def summon_captain_planet(planeteer_calls)
   planeteer_calls.collect_with_index {|element| planeteer_calls << "#{element.upcase}!" }
 end
+planeteer_calls
 
 def long_planeteer_calls# code an argument here
   # Your code here
