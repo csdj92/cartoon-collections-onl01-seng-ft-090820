@@ -1,6 +1,6 @@
 def roll_call_dwarves(sleepy)
   i=0
-sleepy.each.with_index(1)
+sleepy.each.with_index {||
 end
 
 def summon_captain_planet# code an argument here
