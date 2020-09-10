@@ -13,7 +13,11 @@ def long_planeteer_calls(planet)
   planet.any? {|long_call| long_call.length > 4}
 end
 
-def find_the_cheese
-    cheese_types = ("cheddar", "gouda", "camembert").to_a
-    my_find(cheese_types) {|i| i == cheddar}
+def find_the_cheese(cheese)
+  i = 0
+      cheese_types = ("cheddar", "gouda", "camembert")
+      while i <cheese_types.length
+      yield(cheese_types[i])
+      i +=1 
+    end
 end
