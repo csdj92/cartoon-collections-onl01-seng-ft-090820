@@ -15,5 +15,5 @@ end
 
 def find_the_cheese
     cheese_types = ("cheddar", "gouda", "camembert").to_a
-    my_find(cheese_types) {|i|== cheddar}
+    my_find(cheese_types) {|i| i == cheddar}
 end
