@@ -3,7 +3,8 @@ sleepy.each_with_index {|drawf,num| puts "#{num+1}#{drawf}"}
 end
 
 def summon_captain_planet(planeteer_calls)
-  planeteer_calls.collect_with_index {|element| planeteer_calls << "#{element.upcase}!" }
+  calls_new = []
+  planeteer_calls.collect {|element| planeteer_calls << "#{element.upcase}!" }
 end
 planeteer_calls
 
