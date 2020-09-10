@@ -2,12 +2,12 @@ def roll_call_dwarves(sleepy)
 sleepy.each_with_index {|drawf,num| puts "#{num+1}#{drawf}"}
 end
 
-def summon_captain_planet(array)
-  planeteer_calls = []
-  array.collect do |calls|
-    planeteer_calls << "#{calls.capitalize}!"
+def summon_captain_planet(planeteer_calls)
+  calls_new = []
+  planeteer_calls.collect do |element|
+    planeteer_calls << "#{element.capitalize}!"
   end
-  planeteer_calls
+calls_new
 end
 
 
